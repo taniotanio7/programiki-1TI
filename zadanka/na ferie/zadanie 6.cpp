@@ -23,5 +23,7 @@ int main()
     cout << endl;
     dl = dl + 2; // Nowa linia ma o 2 znaki więcej niż poprzednia
   }
+  cin.ignore();
+  cin.ignore();
   return 0;
 }
