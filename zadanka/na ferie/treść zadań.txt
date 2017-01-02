@@ -21,7 +21,7 @@ Ma si� pojawi� informacja za kt�rym razem poda� warto�� prawdziw� 
 
 (tablice)
 
-7. Napisz program, kt�ry wypisze tabliczk� mno�enia z zadanej ilo�ci wierszy i rz�d�w:
+// DONE 7. Napisz program, kt�ry wypisze tabliczk� mno�enia z zadanej ilo�ci wierszy i rz�d�w:
 
 1 2 3 4
 2 4 . .
@@ -29,9 +29,9 @@ Ma si� pojawi� informacja za kt�rym razem poda� warto�� prawdziw� 
 4 . . .
 
 biblioteka <iomanip>
-cout << setw(ILO��_ZNAK�W) << xy
+cout << setw(ILO��_ZNAK�W) << xy (BZDURA! WYSTARCZY UŻYĆ operatora dla cout: cout.width(odległość) !)
 
-8. Napisz program, kt�ry poprosi o podanie n - wysoko��
+// DONE 8. Napisz program, kt�ry poprosi o podanie n - wysoko��
 Tr�jk�t:
 0
 3 6
@@ -52,7 +52,7 @@ Tr�jk� z zadanej ilos�i wierszy:
       xxxxxxxx    (dowolny obr�t)
 
 
-10. Napisz program, kt�ry na podstawie n - wysoko�ci, wypisze tr�jk�t:
+// DONE 10. Napisz program, kt�ry na podstawie n - wysoko�ci, wypisze tr�jk�t:
 
 1 2 3 4
 1 2 3

@@ -1,39 +1,26 @@
 #include <iostream>
 
-void clearconsole(void); // Prototypy funkcji
-void ClrWait(void);
-
 using namespace std;
-
-// Wybór odpowiednich funkcji w oparciu o używany system.
-
-#if _WIN32 // Dla Windowsa
-
-    void clearconsole()
-    {
-          system("cls");
-    }
-
-#else // Dla wszystkiego innego
-
-    #include <unistd.h>
-
-    void clearconsole()
-    {
-      printf("\033[2J"); // Czyści ekran
-      printf("\033[1;1H"); // Ustawia kursor w lewym, górnym rogu
-    }
-
-#endif
 
 int main(void)
 {
-  
-}
+  cout << "Podaj ilość wierszy: ";
+  int wiersze;
+  cin >> wiersze;
+  cout << "Podaj ilość kolumn: ";
+  int kolumny;
+  cin >> kolumny;
 
-void ClrWait()
-{
-  cin.clear();
+  for(int i = 1; i <= wiersze; i++)
+  {
+    for(int i2 = 1; i2 <= kolumny; i2++)
+    {
+      cout.width(3);
+      cout << i * i2 << " ";
+    }
+    cout << endl;
+  }
   cin.ignore();
-  cin.get();
+  cin.ignore();
+  return 0;
 }
