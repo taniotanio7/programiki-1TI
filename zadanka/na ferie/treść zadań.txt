@@ -1,0 +1,60 @@
+//DONE 1. Napisz program, kt�ry obliczy pole kwadratu na podstawie wprowadzonych liczb dodatnich, ca�kowitych.
+Za�. je�li wpisze ujemn� lub zero pojawi si� informacja o b��dzie i podania poprawnej warto�ci
+
+// DONE 2. Pyta o wczytanie dowolnej liczby
+Za�. liczba musi znajdowa� si� w przedziale od 0 do 5, poza tym zakresem - informacja o b��dzie
+
+// DONE 3. Program prosi o wpisanie dowolnych liczb
+Za�. liczby nie mog� by� 0 lub ujemne - informacja o b��dzie i poprosi o podanie jeszcze raz
+Ma si� pojawi� informacja za kt�rym razem poda� warto�� prawdziw� (dodatni�).
+
+// DONE 4. Wczytujemy liczby do momentu wpisania 0, zero ko�czy wprowadzenie. Program wypisuje sum� wszystkich wprowadzonych liczb. Dodatkowo ma by� obliczona suma liczb nie parzystych
+
+// DONE 5. Napisz program, kt�ry obliczy sum� liczb parzystych od 1 do n
+
+6. n - wysokos�, nast�pnie wypisuje choink� z dowolnych znak�w
+
+     x
+    xxx
+   xxxxx
+  xxxxxxx
+
+(tablice)
+
+7. Napisz program, kt�ry wypisze tabliczk� mno�enia z zadanej ilo�ci wierszy i rz�d�w:
+
+1 2 3 4
+2 4 . .
+3 . . .
+4 . . .
+
+biblioteka <iomanip>
+cout << setw(ILO��_ZNAK�W) << xy
+
+8. Napisz program, kt�ry poprosi o podanie n - wysoko��
+Tr�jk�t:
+0
+3 6
+6 9 12
+9 12 15 18
+12 15 18 21 24
+
+9. n - wysoko��
+Tr�jk� z zadanej ilos�i wierszy:
+
+             x
+            xx
+           x x
+          x  x
+         x   x
+        x    x
+       x     x
+      xxxxxxxx    (dowolny obr�t)
+
+
+10. Napisz program, kt�ry na podstawie n - wysoko�ci, wypisze tr�jk�t:
+
+1 2 3 4
+1 2 3
+1 2
+1
