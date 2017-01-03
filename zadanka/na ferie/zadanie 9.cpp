@@ -1,33 +1,71 @@
 #include <iostream>
-#include <string>
-using namespace std;
+#include <iomanip>
 
-void TriangleA(int); // Prototypy funkcji
-void TriangleB(int);
-void TriangleC(int);
-void TriangleD(int);
+using namespace std;
+void TriangleA(int, int); // Prototypy funkcji
+void TriangleB(int, int);
+void TriangleC(int, int);
+void TriangleD(int, int);
+void cls(void);
+
+// Wybór odpowiednich funkcji w oparciu o używany system.
+
+#if _WIN32 // Dla Windowsa
+
+    void cls()
+    {
+          system("cls");
+    }
+
+#else // Dla wszystkiego innego
+
+    #include <unistd.h>
+
+    void cls()
+    {
+      printf("\033[2J"); // Czyści ekran
+      printf("\033[1;1H"); // Ustawia kursor w lewym, górnym rogu
+    }
+
+#endif
 
 int main(void)
 {
-  int n, face, rote;
-  cout << "Podaj wielkość trójkąta: ";
-  cin >> n;
-  cout << "\nWybierz obrót:\n1) lewo\n2) prawo\n   _\b";
-  cin >> face;
-  cout << "\n\nWybierz obrót:\n1) dół\n2) góra\n   _\b";
-  cin >> rote;
+  int n, face, rote, margain;
+  bool done = false;
+  char answ;
+  while (done == false)
+  {
+    cout << "Podaj wielkość trójkąta: ";
+    cin >> n;
+    cout << "Podaj margines (domyślnie 0): ";
+    cin >> margain;
+    cout << "\nWybierz obrót:\n1) lewo\n2) prawo\n   ___\b\b";
+    cin >> face;
+    cout << "\n\nWybierz obrót:\n1) dół\n2) góra\n   ___\b\b";
+    cin >> rote;
 
-  if(face == 1 and rote == 2) TriangleA(n); // Przypadek 1: w lewo, w górę
-  if(face == 2 and rote == 2) TriangleB(n); // Przypadek 2: w prawo, w górę
-  if(face == 1 and rote == 1) TriangleC(n); // Przypadek 3: w lewo, w dół
-  if(face == 2 and rote == 1) TriangleD(n); // Przypadek 4: w prawo, w dół
+    cout << endl << endl;
 
+    if(face == 1 and rote == 2) TriangleA(n, margain); // Przypadek 1: w lewo, w górę
+    if(face == 2 and rote == 2) TriangleB(n, margain); // Przypadek 2: w prawo, w górę
+    if(face == 1 and rote == 1) TriangleC(n, margain); // Przypadek 3: w lewo, w dół
+    if(face == 2 and rote == 1) TriangleD(n, margain); // Przypadek 4: w prawo, w dół
+
+    cout << "\n\nCzy chcesz zakończyć? (T/N): ";
+    cin >> answ;
+    if(answ == 'T' or answ == 't') done = true;
+    if(answ == 'N' or answ == 'n') cls();
+  }
+  cin.ignore();
+  return 0;
 }
 
-void TriangleA(int n) // Przypadek 1
+void TriangleA(int n, int marg) // Przypadek 1
 {
   for (int wiersz = 1; wiersz <= n; wiersz++) // Nowa linia
   {
+    cout << setw(marg);
     if (wiersz < n)
     {
       for (int odst = 1; odst <= n-wiersz; odst++) // Robi odstęp
@@ -52,10 +90,11 @@ void TriangleA(int n) // Przypadek 1
   }
 }
 
-void TriangleB(int n) // Przypadek 2
+void TriangleB(int n, int marg) // Przypadek 2
 {
   for (int wiersz = 1; wiersz <= n; wiersz++) // Nowa linia
   {
+    cout << setw(marg);
     if (wiersz < n)
     {
       for (int linia = 1; linia <= wiersz; linia++)
@@ -76,10 +115,11 @@ void TriangleB(int n) // Przypadek 2
   }
 }
 
-void TriangleC(int n) // Przypadek 3: w lewo, w dół
+void TriangleC(int n, int marg) // Przypadek 3: w lewo, w dół
 {
   for (int wiersz = n; wiersz > 0; wiersz--) // Nowa linia
   {
+    cout << setw(marg);
     if (wiersz == n)
     {
       for (int linia = 1; linia <= n; linia++)
@@ -99,11 +139,12 @@ void TriangleC(int n) // Przypadek 3: w lewo, w dół
   }
 }
 
-void TriangleD(int n) // Przypadek 4: w prawo, w dół
+void TriangleD(int n, int marg) // Przypadek 4: w prawo, w dół
 {
   int count = 1;
   for (int wiersz = n; wiersz > 0; wiersz--)
   {
+    cout << setw(marg);
     if (wiersz == n)
     {
       for (int linia = 1; linia <= wiersz; linia++) // Rysuje długą linię na początku trójkąta
