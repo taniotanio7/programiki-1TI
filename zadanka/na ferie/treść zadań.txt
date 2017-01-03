@@ -12,14 +12,14 @@ Ma si� pojawi� informacja za kt�rym razem poda� warto�� prawdziw� 
 
 // DONE 5. Napisz program, kt�ry obliczy sum� liczb parzystych od 1 do n
 
-6. n - wysokos�, nast�pnie wypisuje choink� z dowolnych znak�w
+// DONE 6. n - wysokos�, nast�pnie wypisuje choink� z dowolnych znak�w
 
      x
     xxx
    xxxxx
   xxxxxxx
 
-(tablice)
+(tablice) // ... albo logika jak kto woli :>
 
 // DONE 7. Napisz program, kt�ry wypisze tabliczk� mno�enia z zadanej ilo�ci wierszy i rz�d�w:
 
@@ -29,7 +29,7 @@ Ma si� pojawi� informacja za kt�rym razem poda� warto�� prawdziw� 
 4 . . .
 
 biblioteka <iomanip>
-cout << setw(ILO��_ZNAK�W) << xy (BZDURA! WYSTARCZY UŻYĆ operatora dla cout: cout.width(odległość) !)
+cout << setw(ILO��_ZNAK�W) << xy  // (BZDURA! WYSTARCZY UŻYĆ operatora dla cout: cout.width(odległość) !)
 
 // DONE 8. Napisz program, kt�ry poprosi o podanie n - wysoko��
 Tr�jk�t:
@@ -39,7 +39,7 @@ Tr�jk�t:
 9 12 15 18
 12 15 18 21 24
 
-9. n - wysoko��
+// DONE 9. n - wysoko�� (UWAGA! Tak moim skromnym zdaniem to zadanie jest najtrudniejsze! Także będzie trochę zabawy)
 Tr�jk� z zadanej ilos�i wierszy:
 
              x

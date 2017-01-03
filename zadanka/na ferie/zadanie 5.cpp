@@ -9,7 +9,7 @@ int main(void)
   int wynik = 0;
   for(int i = 1; i <= n; i++)
   {
-    wynik = wynik + i;
+    wynik += i;
   }
   cout << "\nWynik: " << wynik;
 
