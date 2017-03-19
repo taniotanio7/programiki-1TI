@@ -1,0 +1,13 @@
+1. Program wypisuje liste z figurami po wybraniu jednego z punktów pokazuje t¹ figure (figury zrobione *)	(lista min.4 podpunkty)
+
+2. Napisz programik, który po wpisaniu zdania policzy ile jest w nim liter, oraz które z nich s¹ zapisane du¿¹ i ma³¹ liter¹ oraz wypisze
+to samo zdanie z pozamianymi literaim: ma³e -> du¿e, du¿e -> ma³e.
+PROTIP: U¿yj biblioteki cctype
+
+3. Napisz programik, który wypisze listê znaków alfabetu ³aciñskiego w kodzie binarnym.
+PROTIP: U¿yj funkcji warunkowej for z o takim warunkiem: znak >= 'a' && znak <= 'z'
+DZIENKUJCIE MI JAKI JESTEM DOBRY ~JONATAN
+
+4. Stwórz program, który bêdzie wczytywa³ informacje o BMI do tablity typu int, a nastêpnie obliczy œredni¹
+wszystkich osób oraz poka¿e te wyniki, które s¹ powy¿ej œredniej
+PROTIP: Jak liczyæ BMI: https://pl.wikipedia.org/wiki/Wska%C5%BAnik_masy_cia%C5%82a
