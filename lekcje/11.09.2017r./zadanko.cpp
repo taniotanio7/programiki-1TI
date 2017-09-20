@@ -1,3 +1,8 @@
+// 
+// UWAGA!!!
+// NIEDOKOÅƒCZONE!!!
+//
+
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -42,7 +47,7 @@ int main()
                      default: cout << "Let's try again!";
         }
         
-        cout << "Czy chcesz zabawiæ siê jeszcze raz? (0/1)";
+        cout << "Czy chcesz zabawiÄ‡ siÄ™ jeszcze raz? (0/1)";
         int wybor2;
         cin >> wybor2;
         
@@ -58,7 +63,7 @@ int main()
 void program1(void)
 {
  cls();
- cout << "Podaj liczbê do obliczenia silni: ";
+ cout << "Podaj liczbÄ™ do obliczenia silni: ";
  int input;
  cin >> input;
  
@@ -78,7 +83,7 @@ void program2(void)
 void program3(void)
 {
  cls();
- cout << "Podaj iloœæ liczb do wprowadzenia: ";
+ cout << "Podaj iloÅ›Ä‡ liczb do wprowadzenia: ";
  int max;
  cin >> max;
  
@@ -100,7 +105,7 @@ void program3(void)
 void program4(void)
 {
  srand(time(NULL));
- // 20. 0 - 36, DODAJE DZIEL¥CE PRZEZ 3
+ // 20. 0 - 36, DODAJE DZIELÄ„CE PRZEZ 3
  
 }
 
