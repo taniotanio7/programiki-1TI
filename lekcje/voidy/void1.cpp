@@ -7,8 +7,8 @@ void wypelnij(int tab[3][4])
       {
           for (int i2 = 0; i2 < 4; i2++)
           {
-           cout << "Podaj liczbê [" << i << "][" << i2 << "] = ";
-           cin >> tab[3][4];
+           cout << "Podaj liczbÄ™ [" << i << "][" << i2 << "] = ";
+           cin >> tab[i][i2];
           }
       }
 }
