@@ -5,7 +5,7 @@
 using namespace std;
 
 void trojkat(int w) {
- for (int i = 1; i<=w; i++) { // dla ka¿dej linijki
+ for (int i = 1; i<=w; i++) { // dla kaÅ¼dej linijki
      if(i == 1) {
           for (int znak = 1; znak <= w; znak++) { // dla pierwszej linijki
               cout << "x";
@@ -43,34 +43,61 @@ void zadanie2(int x, int y) {
 }
 }
 
-void zadanie3() {
- int tab[5][5];
- int tab2[5][5];
- 
- cout << "Tablica pierwsza:" << endl;
- 
-  for (int i = 0; i<5; i++) {
-     for (int i2 = 0; i2<5; i2++) {
-         tab[i][i2] = rand() % 10;
-         cout << tab[i][i2] << " ";
-     }
-     cout << endl;
-}
+void zadanie3()
+{
+	int 
+	  tab[5][5],
+	  tab2[5][5];
+	
+	srand(time(NULL));
 
- cout << "Tablica druga:" << endl;
-     
-  for (int i = 0; i<5; i++) {
-      for (int i2 = 0; i2<5; i2++) {
-          if (i != 0) {
-             tab2[i+1][i2+1] = tab[i][i2];
-          } else {
-             tab2[i][i2] = tab[4][i2];
-          }
-          
-          cout << tab2[i][i2] << " ";
-      }
-      cout << endl;
-}
+	for (int a = 0; a < 5; a++)
+	{
+		for (int b = 0; b < 5; b++)
+		{
+			tab[a][b] = 0;
+			tab2[a][b] = 0;
+		}
+	}
+
+	cout << "Tablica pierwsza:" << endl;
+
+	for (int a = 0; a < 5; a++)
+	{
+		for (int b = 0; b < 5; b++)
+		{
+			tab[a][b] = rand() % 10;
+			
+			cout << setw(10) << tab[a][b];
+		}
+		cout << endl;
+	}
+
+	cout << "Tablica druga:" << endl;
+
+	for (int a = 0; a < 5; a++)
+	{
+		for (int b = 0; b < 5; b++)
+		{
+			if (a == 0)
+			{
+				tab2[a][b] = tab[a + 4][b];
+			}
+			
+			else
+			{
+				if (a == 1)
+				{
+					tab2[a][b] = tab[a + 1][b];
+				}
+
+				tab2[a + 1][b] = tab[a][b];
+			}
+
+			cout << setw(10) << tab2[a][b];
+		}
+		cout << endl;
+	}
 }
 
 
@@ -88,14 +115,14 @@ int main() {
        
        switch(wybor) {
           case 1:
-               cout << "Podaj iloœæ wierszy: ";
+               cout << "Podaj iloÅ›Ä‡ wierszy: ";
                int wiersze;
                cin >> wiersze;
                trojkat(wiersze);
                cin.get();
                break;
           case 2:
-               cout << "Podaj wielkosæ tablicy (x i y):" << endl;
+               cout << "Podaj wielkosÄ‡ tablicy (x i y):" << endl;
                int x, y;
                cin >> x >> y;
                zadanie2(x,y);
@@ -104,13 +131,13 @@ int main() {
                zadanie3();
                break;
           default:
-               cout << "B³êdny numer! Wprowad¿ numer od 1 do 4";
+               cout << "BÅ‚Ä™dny numer! WprowadÅ¼ numer od 1 do 4";
                cin.get();
                cin.get();
                continue;          
         }
         
-        cout << "Czy chcesz zakoñczyæ (T/N)? ";
+        cout << "Czy chcesz zakoÅ„czyÄ‡ (T/N)? ";
         char czyKoniec;
         cin >> czyKoniec;
         
