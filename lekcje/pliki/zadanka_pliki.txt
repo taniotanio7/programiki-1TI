@@ -1,0 +1,2 @@
+1. Napisz program, zczytuje 3 liczby i zapisuje do pliku txt
+2. Podaj dwie liczbyl, oblicz pole i obwód prostok¹ta i zapisuje do pliku txt
