@@ -1,0 +1,27 @@
+Zadania
+(pewnie bêd¹ na kartkówce)
+
+Trzeba zrobiæ na funkcjach
+
+1. Podaj iloœæ wierszy i wypisz trójk¹t:
+xxxxxxx
+ x    x
+  x   x
+   x  x
+    x x
+     xx
+      x
+
+2. x na y los 3-4
+3-> 1
+4-> 0
+
+3. Tab 5x5, los z dowolnego zakresu
+zmiana wierszy 1-> 2, 2->3, ... 5-> 1
+
+4. 2 Tablice 5x5:
+	1. los 1-20
+	2. tab[0] + tab2[0] = tab3[0]
+
+
+   
