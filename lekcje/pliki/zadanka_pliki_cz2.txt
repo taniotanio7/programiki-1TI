@@ -1,0 +1,3 @@
+1. Program, wczytaj 3 liczby sumê zapisz w pliku tekstowym.
+2. Wczytuj dowoln¹ iloœæ liczb do momentu wpisania 0 (koñczy wprowadzanie), do pliku zapis wszystkie wpisane liczby poza 0
+3. Wczytuj dowoln¹ iloœæ liczb do momentu wpisania 0, do pliku nr.1 liczby parzyste do pliku nr. 2 liczby nie parzyste
