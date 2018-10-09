@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "");
+
+    // Zapis
+    ofstream zapis("plik.txt");
+    zapis << "cos";
+    zapis.close();
+
+    // Odczyt
+    ifstream odczyt("plik.txt");
+    string odczytany_tekst = "";
+
+    if (odczyt.good()) { // Sprawdzenie czy udało się odczytać
+        getline(odczyt, odczytany_tekst); // Wczytuje jeden wiersz
+    }
+
+    cout << odczytany_tekst;
+
+}
