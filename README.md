@@ -1,4 +1,4 @@
-# programiki-1TI
+# Programiki C++
 
 Programiki tworzone na nasze zacne lekcje programowania :>
 
