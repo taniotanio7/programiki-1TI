@@ -1,0 +1,7 @@
+1.Silnia
+2.Silnia w funkcji rekurencyjnej
+3.ci¹g fibonaciego
+4.ci¹g fibonaciego w funkcji rekurencyjnej
++ Zadania z Pdf "rekurencja.pdf"
+
+Ps bez funkcji "pow()"
